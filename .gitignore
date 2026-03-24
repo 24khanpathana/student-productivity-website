@@ -1,0 +1,53 @@
+# .gitignore for MERN Stack Project
+
+# Dependencies
+# Ignore node_modules folders in the root, server, and client directories
+node_modules/
+
+# Build Output
+# Ignore build folders from Vite (client) or a potential TS build (server)
+dist/
+build/
+
+# Environment Variables
+# NEVER commit your secrets!
+.env
+.env.*
+!.env.example
+
+# Log files
+# Ignore logs from npm, yarn, or other processes
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# IDE / Editor specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS-generated files
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+
+# Misc
+# Ignore temporary files, cached content, etc.
+.npm
+.eslintcache
+.yarn-integrity
+.pnp.*
